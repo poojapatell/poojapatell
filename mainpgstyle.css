@@ -1,0 +1,104 @@
+* {
+    font-family: cursive;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background-image: linear-gradient(rgba(21, 107, 53, 0.547), rgba(1, 5, 19, 0.9)), url(https://www.inquirer.com/resizer/0peAB47BNKydwgwzMxjN1dyNbAk=/1400x932/smart/arc-anglerfish-arc2-prod-pmn.s3.amazonaws.com/public/D2LTRFIHZZEXTAJ55QIZBWGJEU.jpg);
+    
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border:2px rgb(0, 0, 0) solid;
+    padding-top: 6px;
+    background-color: rgb(36, 33, 33,0.7);
+}
+
+.navlink {
+    flex: 1;
+ 
+    text-align: right;
+}
+
+.navlink ul li {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+
+.navlink ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    
+
+}
+
+.navlink ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #2d9e00;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navlink ul li a:hover::after {
+    width: 100%;
+
+}
+
+.box {
+    color: white;
+    width: 70%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.box h1 {
+    font-size: 40px;
+    margin-bottom: 45px;
+    font-family: fantasy;
+    letter-spacing: 3px;
+}
+
+.box h3{
+    margin: 13px 0px 30px;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    font-family:serif;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1.5px rgb(255, 255, 255) solid;
+    color: rgb(255, 254, 254);
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    border: 1.5px rgb(6, 71, 26) solid;
+    transition: 2s;
+    background:black;
+    color: rgb(145, 255, 145);
+}
